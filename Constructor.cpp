@@ -34,3 +34,16 @@ void beriNilai(Dosen &d, Mahasiswa &m, float nilai) {
     cout << "Dosen " << d.nama << " memberi nilai " << m.nama << " dengan nilai = " << nilai << endl;
 }
 
+class Staff {
+private:
+    string nama;
+    string IDstaff;
+    float gaji;
+
+public:
+    Staff(string n, string id, float g) : nama(n), IDstaff(id), gaji(g) {}
+    void lihatGaji() {
+        cout << "Gaji staff " << nama << " adalah " << gaji << endl;
+    }
+};
+
