@@ -29,3 +29,8 @@ public:
     friend void beriNilai(Dosen &d, Mahasiswa &m, float nilai);
 };
 
+void beriNilai(Dosen &d, Mahasiswa &m, float nilai) {
+    m.nilai = nilai;
+    cout << "Dosen " << d.nama << " memberi nilai " << m.nama << " dengan nilai = " << nilai << endl;
+}
+
