@@ -62,3 +62,13 @@ public:
     }
 };
 
+int main() {
+    Mahasiswa m1("Aqif", "M001");
+    Dosen d1("Pak Dosen", "001", "Pangkat", 7000000);
+    Staff s1("Afa", "001", 5000000);
+    Universitas u1;
+    u1.beriNilaiKeMahasiswa(d1, m1, 90.0);
+    u1.tampilkanGajiStaff(s1);
+    u1.ubahPangkatDosen(d1, "Doktor");
+    return 0;
+}
