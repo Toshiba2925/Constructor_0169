@@ -47,3 +47,18 @@ public:
     }
 };
 
+class Universitas {
+public:
+    void ubahPangkatDosen(Dosen &d, string pangkatBaru) {
+        d.ubahPangkat(pangkatBaru);
+    }
+
+    void beriNilaiKeMahasiswa(Dosen &d, Mahasiswa &m, float nilai) {
+        beriNilai(d, m, nilai);
+    }
+
+    void tampilkanGajiStaff(Staff &s) {
+        s.lihatGaji();
+    }
+};
+
